@@ -10,6 +10,43 @@ body {
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    height: 100vh;
-    margin: 0;
+}
+
+h1 {
+    text-transform: uppercase;
+    font-weight: bold;
+}
+
+.project-list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content:space-between;
+    position: relative;
+}
+
+.project {
+    background-color: #3e3e3e;
+    width: 30%;
+    min-width: 200px;
+    border: none;
+    border-radius: 10px;
+    margin: 20px;
+    padding: 70px 20px;
+    cursor: pointer;
+    box-shadow: 3px 3px 6px rgba(0,0,0,0.1), 0px -6px 6px rgba(0,0,0,0.1) ;
+}
+
+li{
+    font-size: 1.5rem;
+    color: #e3e3e3;
+    list-style-position: inside;
+}
+
+a{
+    text-decoration: none;
+    color: #e3e3e3
+}
+
+li::marker{
+    font-weight: 600;
 }
