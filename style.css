@@ -5,11 +5,13 @@
 }
 
 body {
+    background-color: #e6e8fb;
     font-family: 'Roboto', sans-serif;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
+    width: 100vw;
     border: 0;
 }
 
@@ -19,25 +21,32 @@ h1 {
 }
 
 .project-list {
-    display: grid;
-    grid-template: "project project project";
-    justify-content:space-evenly;
+    display: flex;
+    justify-content: center;
     position: relative;
 }
 
 .project {
-    grid-area: "project";
-    background-color: #3e3e3e;
+    background-color: #32636c;
     border: none;
+    width: 20vw;
+    min-width: 300px;
     border-radius: 10px;
     margin: 20px;
     padding: 70px 20px;
     cursor: pointer;
+    transition: transform 1s ease-in
     box-shadow: 3px 3px 6px rgba(0,0,0,0.1), 0px -6px 6px rgba(0,0,0,0.1) ;
+}
+
+.project:hover {
+    transform:;
 }
 
 main ol {
     display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
     
 }
 
@@ -45,6 +54,7 @@ li{
     font-size: 1.5rem;
     color: #e3e3e3;
     list-style-position: inside;
+    position: relative;
 }
 
 a{
